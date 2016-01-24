@@ -1,0 +1,64 @@
+;; Object studenti/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "studenti/"
+  :tables
+  (list
+    (semanticdb-table "use_stui.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("studenti.h" include nil nil [21 42])
+            ("std::cin" using (:type ("std::cin" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [44 59])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [60 76])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [77 93])
+            ("set" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sa" variable
+                       (:reference 1
+                        :type ("Student" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104 116])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [117 123]))                  
+                :type "void")
+                nil [95 124])
+            ("pupils" variable
+               (:constant-flag t
+                :default-value "3"
+                :type "int")
+                nil [125 144])
+            ("quizzes" variable
+               (:constant-flag t
+                :default-value "5"
+                :type "int")
+                nil [145 165])
+            ("main" function (:type "int") nil [167 567])
+            ("set" function
+               (:arguments 
+                  ( ("sa" variable
+                       (:reference 1
+                        :type ("Student" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [578 590])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [591 597]))                  
+                :type "void")
+                nil [569 790]))          
+      :file "use_stui.cpp"
+      :pointmax 797
+      :fsize 796
+      :lastmodtime '(22123 3474 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "studenti.h"
+      :file "studenti.h"
+      :fsize 1084
+      :lastmodtime '(22123 3474 0 0)))
+  :file "!t2!dev!lang!cpp!ch14!studenti!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

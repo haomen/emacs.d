@@ -1,0 +1,314 @@
+;; Object worker/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "worker/"
+  :tables
+  (list
+    (semanticdb-table "test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [31 40])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41 54]))                  
+                :type "int")
+                nil [22 72]))          
+      :file "test.cpp"
+      :pointmax 73
+      :fsize 72
+      :lastmodtime '(22180 18654 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "worker0.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("worker0.h" include nil nil [1 21])
+            ("iostream" include (:system-flag t) nil [22 41])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [43 59])
+            ("std::cin" using (:type ("std::cin" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [60 75])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [76 92])
+            ("Worker" function
+               (:destructor-flag t
+                :parent "Worker"
+                :type "void")
+                nil [115 134])
+            ("Set" function
+               (:parent "Worker"
+                :type "void")
+                nil [136 296])
+            ("Show" function
+               (:parent "Worker"
+                :type "void")
+                nil [299 396])
+            ("Set" function
+               (:parent "Waiter"
+                :type "void")
+                nil [415 551])
+            ("Show" function
+               (:parent "Waiter"
+                :type "void")
+                nil [553 672])
+            ("Singer::pv" variable
+               (:pointer 1
+                :dereference 1
+                :default-value "{\"other\",
+                    \"alto\",
+                    \"contralto\",
+                    \"soprano\",
+                    \"bass\",
+                    \"baritone\",
+                    \"tenor\"}"
+                :type "char")
+                nil [691 901])
+            ("Set" function
+               (:parent "Singer"
+                :type "void")
+                nil [902 1181])
+            ("Show" function
+               (:parent "Singer"
+                :type "void")
+                nil [1183 1300]))          
+      :file "worker0.cpp"
+      :pointmax 1301
+      :fsize 1300
+      :lastmodtime '(22123 3474 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "worker0.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("WORKER0_H_" variable (:constant-flag t) nil [28 38])
+            ("string" include (:system-flag t) nil [40 57])
+            ("Worker" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [74 82])
+                    ("fullname" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [85 106])
+                    ("id" variable (:type "long") (reparse-symbol classsubparts) [109 117])
+                    ("public" label nil (reparse-symbol classsubparts) [120 127])
+                    ("Worker" function
+                       (:constructor-flag t
+                        :type ("Worker" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [129 165])
+                    ("Worker" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [174 195])
+                            ("n" variable (:type "long") (reparse-symbol arg-sub-list) [195 202]))                          
+                        :type ("Worker" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [167 222])
+                    ("Worker" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [225 245])
+                    ("Set" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [272 291])
+                    ("Show" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [294 320]))                  
+                :type "class")
+                nil [59 323])
+            ("Waiter" type
+               (:superclasses 
+                  ( ("Worker" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [354 362])
+                    ("panache" variable (:type "int") (reparse-symbol classsubparts) [365 377])
+                    ("public" label nil (reparse-symbol classsubparts) [380 387])
+                    ("Waiter" function
+                       (:constructor-flag t
+                        :type ("Waiter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [389 419])
+                    ("Waiter" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [428 449])
+                            ("n" variable (:type "long") (reparse-symbol arg-sub-list) [450 457])
+                            ("p" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [458 465]))                          
+                        :type ("Waiter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [421 491])
+                    ("Waiter" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("wk" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Worker" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [500 517])
+                            ("p" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [518 525]))                          
+                        :type ("Waiter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [493 550])
+                    ("Set" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [553 564])
+                    ("Show" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [567 585]))                  
+                :type "class")
+                nil [325 588])
+            ("Singer" type
+               (:superclasses 
+                  ( ("Worker" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("protected" label nil (reparse-symbol classsubparts) [619 629])
+                    ("" type
+                       (:members 
+                          ( ("other" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [637 643])
+                            ("alto" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [651 656])
+                            ("contralto" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [664 674])
+                            ("soprano" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [682 690])
+                            ("bass" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [698 703])
+                            ("baritone" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [711 720])
+                            ("tenor" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [728 734]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [632 735])
+                    ("" type
+                       (:members 
+                          ( ("Vtypes" variable
+                               (:constant-flag t
+                                :default-value (750 751)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [743 751]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [738 753])
+                    ("private" label nil (reparse-symbol classsubparts) [760 768])
+                    ("pv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :typemodifiers ("static")
+                        :type "char")
+                        (reparse-symbol classsubparts) [771 795])
+                    ("voice" variable (:type "int") (reparse-symbol classsubparts) [798 808])
+                    ("public" label nil (reparse-symbol classsubparts) [815 822])
+                    ("Singer" function
+                       (:constructor-flag t
+                        :type ("Singer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [824 856])
+                    ("Singer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [865 886])
+                            ("n" variable (:type "long") (reparse-symbol arg-sub-list) [887 894])
+                            ("v" variable
+                               (:default-value "other"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [895 906]))                          
+                        :type ("Singer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [858 930])
+                    ("Singer" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("wk" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Worker" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [939 956])
+                            ("v" variable
+                               (:default-value "other"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [957 968]))                          
+                        :type ("Singer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [932 991])
+                    ("Set" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [994 1005])
+                    ("Show" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1008 1025]))                  
+                :type "class")
+                nil [590 1028]))          
+      :file "worker0.h"
+      :pointmax 1037
+      :fsize 1036
+      :lastmodtime '(22123 3474 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("WORKER0_H_")
+          )
+)
+    (semanticdb-table "worktest.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("worker0.h" include nil nil [21 41])
+            ("LIM" variable
+               (:constant-flag t
+                :default-value "4"
+                :type "int")
+                nil [43 59])
+            ("main" function (:type "int") nil [61 367]))          
+      :file "worktest.cpp"
+      :pointmax 376
+      :fsize 375
+      :lastmodtime '(22123 3474 0 0)
+      :unmatched-syntax nil))
+  :file "!t2!dev!lang!cpp!ch14!worker!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -103,7 +103,8 @@
 (setq-default indent-tabs-mode nil)
 
 ;; set appearance of a tab that is represented by 4 spaces
-(setq-default tab-width 4)
+(setq tab-width 2)
+(setq-default tab-width 2)
 
 ;; Compilation
 (global-set-key (kbd "<f5>") (lambda ()
@@ -120,13 +121,13 @@
  gdb-show-main t
  )
 
-;; Package: clean-aindent-mode
-(require 'clean-aindent-mode)
-(add-hook 'prog-mode-hook 'clean-aindent-mode)
+;; ;; Package: clean-aindent-mode
+;; (require 'clean-aindent-mode)
+;; (add-hook 'prog-mode-hook 'clean-aindent-mode)
 
-;; Package: dtrt-indent
-(require 'dtrt-indent)
-(dtrt-indent-mode 1)
+;; ;; Package: dtrt-indent
+;; (require 'dtrt-indent)
+;; (dtrt-indent-mode 1)
 
 ;; Package: ws-butler
 (require 'ws-butler)
@@ -158,3 +159,15 @@
 
 ;; Package zygospore
 (global-set-key (kbd "C-x 1") 'zygospore-toggle-delete-other-windows)
+
+;; speedbar
+(setq speedbar-show-unknown-files t)
+
+;;setup line
+;;(global-linum-mode t)
+(setq linum-format "%4d | ")
+(global-set-key (kbd "C-l") 'goto-line)
+(global-set-key (kbd "C-x C-f") 'sr-speedbar-toggle)
+(global-set-key (kbd "C-x C-l") 'linum-mode) 
+(global-set-key (kbd "C-c r") 'comment-region)
+(global-set-key (kbd "C-c u") 'uncomment-region)

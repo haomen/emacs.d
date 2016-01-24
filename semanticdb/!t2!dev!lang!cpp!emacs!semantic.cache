@@ -1,0 +1,16 @@
+;; Object emacs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "emacs/"
+  :tables
+  (list
+    (semanticdb-table "test.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "test.cpp"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22179 2224 0 0)
+      :unmatched-syntax '((punctuation 29 . 30) (symbol 21 . 29) (punctuation 20 . 21) (symbol 12 . 19) (punctuation 11 . 12) (punctuation 10 . 11) (symbol 2 . 9) (punctuation 1 . 2) (symbol 2 . 7) (punctuation 1 . 2) (symbol 2 . 9) (punctuation 1 . 2))))
+  :file "!t2!dev!lang!cpp!emacs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

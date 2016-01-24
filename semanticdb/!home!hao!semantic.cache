@@ -1,0 +1,16 @@
+;; Object hao/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "hao/"
+  :tables
+  (list
+    (semanticdb-table "test.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "test.cpp"
+      :pointmax 12
+      :fsize 11
+      :lastmodtime '(22180 11625 0 0)
+      :unmatched-syntax '((punctuation 10 . 11) (symbol 2 . 8) (punctuation 1 . 2))))
+  :file "!home!hao!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,100 @@
+;; Object Functions/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Functions/"
+  :tables
+  (list
+    (semanticdb-table "travel.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cstdlib" include (:system-flag t) nil [89 107])
+            ("iostream" include (:system-flag t) nil [108 127])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [129 149])
+            ("travel_time" type
+               (:members 
+                  ( ("hours" variable (:type "int") (reparse-symbol classsubparts) [175 185])
+                    ("mins" variable (:type "int") (reparse-symbol classsubparts) [190 199]))                  
+                :type "struct")
+                nil [151 202])
+            ("Mins_per_hr" variable
+               (:constant-flag t
+                :default-value "60"
+                :type "int")
+                nil [203 228])
+            ("sum" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("t1" variable (:type ("travel_time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [246 261])
+                    ("t2" variable (:type ("travel_time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [261 276]))                  
+                :type ("travel_time" type (:type "class") nil nil))
+                nil [230 277])
+            ("show_time" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("t" variable (:type ("travel_time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [293 307]))                  
+                :type "void")
+                nil [278 308])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [319 328])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [329 341]))                  
+                :type "int")
+                nil [310 604])
+            ("sum" function
+               (:arguments 
+                  ( ("t1" variable (:type ("travel_time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [622 637])
+                    ("t2" variable (:type ("travel_time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [637 652]))                  
+                :type ("travel_time" type (:type "class") nil nil))
+                nil [606 808])
+            ("show_time" function
+               (:arguments 
+                  ( ("t" variable (:type ("travel_time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [826 840]))                  
+                :type "void")
+                nil [811 896]))          
+      :file "travel.cpp"
+      :pointmax 897
+      :fsize 896
+      :lastmodtime '(22123 3308 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("MKDIR" variable (:default-value ("mkdir")) nil [2259 2271])
+            ("CP" variable (:default-value ("cp")) nil [2271 2277])
+            ("CCADMIN" variable (:default-value ("CCadmin")) nil [2277 2293])
+            ("build" function (:arguments (".build-post")) nil [2303 2322])
+            (".build-pre" function nil nil [2323 2335])
+            (".build-post" function (:arguments (".build-impl")) nil [2372 2397])
+            ("clean" function (:arguments (".clean-post")) nil [2444 2463])
+            (".clean-pre" function nil nil [2464 2476])
+            (".clean-post" function (:arguments (".clean-impl")) nil [2513 2538])
+            ("clobber" function (:arguments (".clobber-post")) nil [2587 2610])
+            (".clobber-pre" function nil nil [2611 2625])
+            (".clobber-post" function (:arguments (".clobber-impl")) nil [2664 2693])
+            ("all" function (:arguments (".all-post")) nil [2740 2755])
+            (".all-pre" function nil nil [2756 2766])
+            (".all-post" function (:arguments (".all-impl")) nil [2801 2822])
+            ("build-tests" function (:arguments (".build-tests-post")) nil [2873 2904])
+            (".build-tests-pre" function nil nil [2905 2923])
+            (".build-tests-post" function (:arguments (".build-tests-impl")) nil [2966 3003])
+            ("test" function (:arguments (".test-post")) nil [3060 3077])
+            (".test-pre" function (:arguments ("build-tests")) nil [3078 3101])
+            (".test-post" function (:arguments (".test-impl")) nil [3137 3160])
+            ("help" function (:arguments (".help-post")) nil [3205 3222])
+            (".help-pre" function nil nil [3223 3234])
+            (".help-post" function (:arguments (".help-impl")) nil [3270 3293])
+            ("nbproject/Makefile-impl.mk" include nil nil [3374 3409])
+            ("nbproject/Makefile-variables.mk" include nil nil [3443 3483]))          
+      :file "Makefile"
+      :pointmax 3483
+      :fsize 3482
+      :lastmodtime '(22123 3308 0 0)
+      :unmatched-syntax nil))
+  :file "!t2!dev!lang!cpp!Functions!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
