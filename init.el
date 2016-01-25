@@ -163,6 +163,9 @@
 ;; speedbar
 (setq speedbar-show-unknown-files t)
 
+;; diable warning
+(setq warning-minimum-level :emergency)
+
 ;;setup line
 ;;(global-linum-mode t)
 (setq linum-format "%4d | ")
@@ -171,3 +174,10 @@
 (global-set-key (kbd "C-x C-l") 'linum-mode) 
 (global-set-key (kbd "C-c r") 'comment-region)
 (global-set-key (kbd "C-c u") 'uncomment-region)
+
+;;window numbering
+(add-to-list 'load-path "~/.emacs.d/lisp" )
+(require 'window-numbering)
+(window-numbering-mode t)
+(setq window-numbering-assign-func
+            (lambda () (when (equal (buffer-name) "*Calculator*") 9)))
