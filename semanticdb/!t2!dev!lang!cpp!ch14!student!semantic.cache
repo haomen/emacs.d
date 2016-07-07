@@ -1,0 +1,108 @@
+;; Object student/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "student/"
+  :tables
+  (list
+    (semanticdb-table "student.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("studentc.h" include nil nil [1 22])
+            ("std::ostream" using (:type ("std::ostream" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [23 42])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [43 59])
+            ("std::istream" using (:type ("std::istream" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [60 79])
+            ("std::string" using (:type ("std::string" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [80 98])
+            ("Average" function
+               (:parent "Student"
+                :type "double")
+                nil [118 234])
+            ("Name" function
+               (:parent "Student"
+                :constant-flag t
+                :type ("string" type (:type "class") nil nil))
+                nil [237 290])
+            ("[]" function
+               (:operator-flag t
+                :parent "Student"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [321 327]))                  
+                :type "double")
+                nil [292 352])
+            ("[]" function
+               (:operator-flag t
+                :parent "Student"
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [381 387]))                  
+                :type "double")
+                nil [354 415])
+            ("arr_out" function
+               (:parent "Student"
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [461 473]))                  
+                :type ("ostream" type (:type "class") nil nil))
+                nil [435 689])
+            (">>" function
+               (:operator-flag t
+                :arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [758 770])
+                    ("stu" variable
+                       (:reference 1
+                        :type ("Student" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [771 784]))                  
+                :type ("istream" type (:type "class") nil nil))
+                nil [738 824])
+            ("getline" function
+               (:arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [863 875])
+                    ("stu" variable
+                       (:reference 1
+                        :type ("Student" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [876 889]))                  
+                :type ("istream" type (:type "class") nil nil))
+                nil [846 930])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [989 1001])
+                    ("stu" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Student" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1002 1021]))                  
+                :type ("ostream" type (:type "class") nil nil))
+                nil [969 1125]))          
+      :file "student.cpp"
+      :pointmax 1127
+      :fsize 1126
+      :lastmodtime '(22123 3474 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "studentc.h"
+      :file "studentc.h"
+      :fsize 996
+      :lastmodtime '(22123 3474 0 0)))
+  :file "!t2!dev!lang!cpp!ch14!student!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

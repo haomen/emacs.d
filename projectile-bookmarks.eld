@@ -1,0 +1,1 @@
+("~/.emacs.d/" "/t2/dev/lang/")

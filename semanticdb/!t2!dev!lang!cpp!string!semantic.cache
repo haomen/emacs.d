@@ -1,0 +1,45 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("string" include (:system-flag t) nil [21 38])
+            ("cstdlib" include (:system-flag t) nil [39 57])
+            ("ctime" include (:system-flag t) nil [58 74])
+            ("cctype" include (:system-flag t) nil [75 92])
+            ("NUM" variable
+               (:default-value "26"
+                :type "int")
+                nil [118 129])
+            ("wordlist" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "{
+        \"apiary\",\"beetle\",\"cereal\",\"danger\",\"ensign\"
+}"
+                :type ("string" type (:type "class") nil nil))
+                nil [130 214])
+            ("main" function (:type "int") nil [216 538]))          
+      :file "hangman.cpp"
+      :pointmax 539
+      :fsize 538
+      :lastmodtime '(22209 23094 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("string" include (:system-flag t) nil [21 38])
+            ("main" function (:type "int") nil [40 610]))          
+      :file "str2.cpp"
+      :pointmax 611
+      :fsize 610
+      :lastmodtime '(22240 65193 0 0)
+      :unmatched-syntax nil))
+  :file "!t2!dev!lang!cpp!string!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

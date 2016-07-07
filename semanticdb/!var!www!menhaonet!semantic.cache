@@ -1,0 +1,28 @@
+;; Object menhaonet/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "menhaonet/"
+  :tables
+  (list
+    (semanticdb-table "index.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("menhao.net" section nil nil [8 46])
+            ("(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-75349654-1', 'auto');
+    ga('send', 'pageview');" section nil nil [46 480])
+            ("-->
+<!-- <font color=\"white\">Currahee!!!" section (:members 
+              ( ("GIT" section (:members 
+                  ( ("&nbsp;&nbsp;MENHAO.NET &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2003-2016&nbsp;&nbsp;" anchor nil nil [924 927]))                  ) nil [846 1234]))              ) nil [480 1234]))          
+      :file "index.html"
+      :pointmax 1234
+      :fsize 1233
+      :lastmodtime '(22255 24707 0 0)
+      :unmatched-syntax nil))
+  :file "!var!www!menhaonet!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

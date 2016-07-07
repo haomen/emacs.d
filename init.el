@@ -17,7 +17,7 @@
     helm-gtags
     helm-projectile
     helm-swoop
-    ;; function-args
+    ;;    function-args
     clean-aindent-mode
     comment-dwim-2
     dtrt-indent
@@ -88,7 +88,7 @@
 ;; “java”: The default style for java-mode (see below)
 ;; “user”: When you want to define your own style
 (setq
- c-default-style "linux" ;; set style to "linux"
+ c-default-style "stroustrup" ;; set style to "linux"
  )
 
 (global-set-key (kbd "RET") 'newline-and-indent)  ; automatically indent when press RET
@@ -100,11 +100,11 @@
 (add-hook 'prog-mode-hook (lambda () (interactive) (setq show-trailing-whitespace 1)))
 
 ;; use space to indent by default
-(setq-default indent-tabs-mode nil)
+;;(setq-default indent-tabs-mode nil)
 
 ;; set appearance of a tab that is represented by 4 spaces
-(setq tab-width 2)
-(setq-default tab-width 2)
+(setq tab-width 4)
+(setq-default tab-width 4)
 
 ;; Compilation
 (global-set-key (kbd "<f5>") (lambda ()
@@ -121,9 +121,9 @@
  gdb-show-main t
  )
 
-;; ;; Package: clean-aindent-mode
-;; (require 'clean-aindent-mode)
-;; (add-hook 'prog-mode-hook 'clean-aindent-mode)
+;; Package: clean-aindent-mode
+(require 'clean-aindent-mode)
+(add-hook 'prog-mode-hook 'clean-aindent-mode)
 
 ;; ;; Package: dtrt-indent
 ;; (require 'dtrt-indent)
@@ -170,8 +170,8 @@
 ;;(global-linum-mode t)
 (setq linum-format "%4d | ")
 (global-set-key (kbd "C-l") 'goto-line)
-(global-set-key (kbd "C-x C-f") 'sr-speedbar-toggle)
-(global-set-key (kbd "C-x C-l") 'linum-mode) 
+(global-set-key (kbd "C-c f") 'sr-speedbar-toggle)
+(global-set-key (kbd "C-c l") 'linum-mode)
 (global-set-key (kbd "C-c r") 'comment-region)
 (global-set-key (kbd "C-c u") 'uncomment-region)
 
@@ -181,3 +181,8 @@
 (window-numbering-mode t)
 (setq window-numbering-assign-func
             (lambda () (when (equal (buffer-name) "*Calculator*") 9)))
+(add-to-list 'load-path "~/.emacs.d/custom")
+(autoload 'markdown-mode "markdown-mode"
+  "major-mode for markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
