@@ -167,13 +167,24 @@
 (setq warning-minimum-level :emergency)
 
 ;;setup line
-;;(global-linum-mode t)
+(global-linum-mode t)
 (setq linum-format "%4d | ")
 (global-set-key (kbd "C-l") 'goto-line)
 (global-set-key (kbd "C-c f") 'sr-speedbar-toggle)
 (global-set-key (kbd "C-c l") 'linum-mode)
 (global-set-key (kbd "C-c r") 'comment-region)
 (global-set-key (kbd "C-c u") 'uncomment-region)
+
+;;org-mode
+(global-set-key (kbd "C-c c") 'org-todo)
+(global-set-key (kbd "C-c a") 'org-agenda)
+(setq org-todo-keywords '((sequence "TODO" "DOING" "DONE")))
+(setq org-todo-keyword-faces '(("TOTO" . "red")
+                               ("DOING" . "yellow")
+                               ("DONE" . "green")))
+(setq org-log-done 'time)
+;;imenu
+(global-set-key (kbd "C-c i") 'imenu)
 
 ;;window numbering
 (add-to-list 'load-path "~/.emacs.d/lisp" )
